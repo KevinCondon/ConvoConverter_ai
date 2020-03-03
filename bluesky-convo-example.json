@@ -1,0 +1,464 @@
+{
+    "clientID": 1,
+    "startingInterest": 1,
+    "audio": "audio/bluesky/part1/",
+    "setup":{
+        "heading":"BlueSky Internet and TV",
+        "subheading":"Kevin Lambert, IT Operations Manager HQ",
+        "body":"The BlueSky Internet and TV account was recently reassigned to you after the previous seller, Krystal Worthington, moved to a different position within CDW. Kevin Lambert, the IT Operations Manager at the customer's corporate headquarters, was Krystal's main contact while she was on the account. Krystal connected you and Kevin via email last week, but this is your first phone conversation with him."
+    },
+    "locationMap": {
+        "Main!A3": {
+            "sheet": "main",
+            "index": 0
+        },
+        "Main!A9": {
+            "sheet": "main",
+            "index": 1
+        },
+        "Main!A15": {
+            "sheet": "main",
+            "index": 2
+        },
+        "Main!A21": {
+            "sheet": "main",
+            "index": 3
+        },
+        "Main!A27": {
+            "sheet": "main",
+            "index": 4
+        },
+        "Branch!A3": {
+            "sheet": "branch",
+            "index": 0
+        },
+        "Branch!A9": {
+            "sheet": "branch",
+            "index": 1
+        },
+        "Branch!A15": {
+            "sheet": "branch",
+            "index": 2
+        },
+        "Branch!A21": {
+            "sheet": "branch",
+            "index": 3
+        },
+        "Branch!A27": {
+            "sheet": "branch",
+            "index": 4
+        },
+        "Branch!A33": {
+            "sheet": "branch",
+            "index": 5
+        },
+        "Conclusion 1": {
+            "sheet": "conclusion",
+            "index": 0
+        },
+        "Conclusion 2": {
+            "sheet": "conclusion",
+            "index": 1
+        },
+        "Conclusion 3": {
+            "sheet": "conclusion",
+            "index": 2
+        },
+        "Conclusion 4": {
+            "sheet": "conclusion",
+            "index": 3
+        }
+    },
+    "main": [
+        {
+            "customerText": "Good morning! This is Kevin with BlueSky Internet and TV.",
+            "options": [
+                {
+                    "text": "Hi Kevin. I'm calling from CDW. We connected via email last week. Thanks for taking my call! How are you doing today?",
+                    "response": "Next round",
+                    "result": "Main!A9",
+                    "feedback": "A good, friendly greeting. Nice job in reminding Kevin about your email introduction.",
+                    "graphPoints": 2,
+                    "barPoints": 2
+                },
+                {
+                    "text": "Hi Kevin, I'm calling from CDW. I'm your new seller. Krystal introduced us via email last week. How are you today?",
+                    "response": "Next round",
+                    "result": "Main!A9",
+                    "feedback": "Try to be more personable. You might start by asking how Kevin is doing today.",
+                    "graphPoints": 1,
+                    "barPoints": 0
+                },
+                {
+                    "text": "Hello, Kevin. I'm calling from CDW with some ideas for making better use of your customer data. Do you have time to chat?",
+                    "response": "You must be the new seller.",
+                    "result": "Branch!A3",
+                    "feedback": "Try to be more personable. You might start by asking how Kevin is doing today.",
+                    "graphPoints": 0,
+                    "barPoints": 0
+                },
+                {
+                    "text": "Hi Kevin! Greetings from CDW. I'm your new seller. How are you doing today?",
+                    "response": "Next round",
+                    "result": "Main!A9",
+                    "feedback": "This is a good greeting, but it would have been better if you had reminded Kevin about the email introduction the previous seller gave you.",
+                    "graphPoints": 1,
+                    "barPoints": 1
+                }
+            ]
+        },
+        {
+            "customerText": "I'm doing all right. You're Krystal's replacement?",
+            "options": [
+                {
+                    "text": "Yes! Today I just want to connect and offer my assistance. I understand you've looked to CDW for some of your hardware, software, and IT needs. Can you tell me a little bit more about how you work with CDW?",
+                    "response": "Next round",
+                    "result": "Main!A15",
+                    "feedback": "This option presents a smooth transition to an open-ended question that should reveal more information about BlueSky's business.",
+                    "graphPoints": 2,
+                    "barPoints": 2
+                },
+                {
+                    "text": "That's right. I mainly wanted to get on the phone and check in. Do you have any immediate needs?",
+                    "response": "Branch",
+                    "result": "Branch!A9",
+                    "feedback": "This direct question could get you a quick win, but with a new account you may instead hit a dead end in the conversation. Be prepared to pivot to a new topic.",
+                    "graphPoints": 1,
+                    "barPoints": 1
+                },
+                {
+                    "text": "Yes, I am. I'm excited to work with you! Krystal gave me a 30,000-foot view of your business, but I want to dig a bit deeper. Can you help me understand how you primarily work with CDW?",
+                    "response": "Next round",
+                    "result": "Main!A15",
+                    "feedback": "This option presents a smooth transition to an open-ended question that should reveal more information about BlueSky's business.",
+                    "graphPoints": 3,
+                    "barPoints": 3
+                },
+                {
+                    "text": "Yes, I am. Krystal gave me a 30,000-foot view of your business, but I want to dig a bit deeper and find something actionable that we can turn into our first partner move.",
+                    "response": "Branch",
+                    "result": "Branch!A9",
+                    "feedback": "You should have \"warmed up\" your statement a bit, perhaps by saying that you're looking forward to working with Kevin. ",
+                    "graphPoints": 0,
+                    "barPoints": 0
+                }
+            ]
+        },
+        {
+            "customerText": "Well, Krystal made it easy for me. She was super responsive to my requests for quotes and always followed up on my orders to make sure I got what I needed. I recently moved some of our software support over to CDW and we’re looking at expanding our security and support services with you. I’ll be honest: you’ve got some big shoes to fill.",
+            "options": [
+                {
+                    "text": "I hear you, Kevin, and I'll do my best to live up to your expectations. I've been reviewing Krystal's notes and I'm curious about your plans for customer data. Do you have another few minutes to talk about that?",
+                    "response": "Next round",
+                    "result": "Main!A21",
+                    "feedback": "Instead of asking if Kevin has more time to talk, ask him an open-ended question about the topic you want to explore.",
+                    "graphPoints": 1,
+                    "barPoints": 2
+                },
+                {
+                    "text": "I'm glad to hear your experience with Krystal was so positive. Now, if we can go big-picture for a minute, I'd like to hear a bit more about your IT strategy for the near future. What is BlueSky looking to accomplish, and how will that affect your work as IT Operations Manager?",
+                    "response": "Branch",
+                    "result": "Branch!A15",
+                    "feedback": "Try to be more direct with value-based messaging. Explore a specific topic that you believe Kevin will find worth discussing.",
+                    "graphPoints": 0,
+                    "barPoints": 0
+                },
+                {
+                    "text": "That’s great to hear, Kevin. Krystal said how much she enjoyed working with you, and I plan to live up to both your expectations. I've been reviewing Krystal's notes and I'm curious about your plans for customer data. Could you describe how BlueSky uses customer data?",
+                    "response": "Next round",
+                    "result": "Main!A21",
+                    "feedback": "Good. You've \"warmed up\" the call a bit by this point with some pleasant dialog, and if you've done your research, you'll know that customer data is likely an important topic for Kevin.",
+                    "graphPoints": 2,
+                    "barPoints": 3
+                },
+                {
+                    "text": "I understand. I don't want to take up too much of your time today, but since I'm new to the account, I'd like to set aside time for you and I to review your needs. When would you have 15-20 minutes to catch up next week?",
+                    "response": "Branch",
+                    "result": "Branch!A21",
+                    "feedback": "Careful! While you do want to schedule a follow-up call, you'd do well to learn more about the business now, so that the next call is as productive as possible.",
+                    "graphPoints": 0,
+                    "barPoints": 1
+                }
+            ]
+        },
+        {
+            "customerText": "Customer data is a big topic over here right now. It really touches all parts of the business.",
+            "options": [
+                {
+                    "text": "And how does customer data affect your work as IT Operations Manager?",
+                    "response": "Next round",
+                    "result": "Main!A27",
+                    "feedback": "This is a good option, though you could have emphasized CDW's expertise with customer data.",
+                    "graphPoints": 1,
+                    "barPoints": 3
+                },
+                {
+                    "text": "I've been looking at your account and I think we might be able to help you manage your customer data more efficiently. What time would work for you next week to discuss possibilities?",
+                    "response": "Branch",
+                    "result": "Branch!A21",
+                    "feedback": "This was an opportunity for an open-ended question. Be efficient, but don't rush through the conversation. Take time to confirm what you learned in your customer research.",
+                    "graphPoints": 1,
+                    "barPoints": 2
+                },
+                {
+                    "text": "Can you elaborate a little bit? How does customer data affect your role?",
+                    "response": "Next round",
+                    "result": "Main!A27",
+                    "feedback": "This is a good option, though you could have emphasized CDW's expertise with customer data.",
+                    "graphPoints": 1,
+                    "barPoints": 3
+                },
+                {
+                    "text": "The reason I bring it up is because CDW has a lot of experience managing and securing customer data. How does the need to work with customer data influence IT at BlueSky?",
+                    "response": "Next round",
+                    "result": "Main!A27",
+                    "feedback": "Yes! You asked an open-ended question and took the opportunity to bring up CDW's experience with data.",
+                    "graphPoints": 2,
+                    "barPoints": 4
+                }
+            ]
+        },
+        {
+            "customerText": "Our customer base is growing by leaps and bounds. Managing all of the data associated with these new accounts just continues to add more complexity to our infrastructure, which makes my work a bit tougher. Job security, I guess! Heh.",
+            "options": [
+                {
+                    "text": "Sure, more data can mean more technical challenges and security concerns. These are areas CDW has deep expertise in, and we can help minimize your risks. Can we set up some time next week to delve into this? I'll introduce you to one of our data experts.",
+                    "response": "Actually, that sounds great. How about something Monday afternoon?",
+                    "result": "Conclusion 1",
+                    "feedback": "Very good! You scheduled a follow-up call with Kevin, and you smoothly set expectations that you'd be bringing a domain expert. Nice work.",
+                    "graphPoints": 2,
+                    "barPoints": 5
+                },
+                {
+                    "text": "The reason I bring it up is because CDW has a lot of expertise in managing and securing big data. How about we set up a call next week so you can talk with one of our experts? In the meantime, I'll send you one of our whitepapers.",
+                    "response": "OK, sounds good. Let's do Monday afternoon.",
+                    "result": "Conclusion 1",
+                    "feedback": "Good. You scheduled a follow-up call with Kevin and a CDW expert. However, you could have used more value-based messaging.",
+                    "graphPoints": 2,
+                    "barPoints": 4
+                },
+                {
+                    "text": "These are areas CDW has deep expertise in, and I think we can help you minimize your risks. Could I send you a whitepaper, or connect you with one of our big data experts?",
+                    "response": "Send me a whitepaper, sure. I'll take a look.",
+                    "result": "Conclusion 3",
+                    "feedback": "You used value-based messaging, but you didn't firmly suggest a follow-up call. Be clearer with your invitation.",
+                    "graphPoints": 1,
+                    "barPoints": 2
+                },
+                {
+                    "text": "Funny! So it sounds like your job is going to get even more interesting in the near future. Have you thought about what changes you'll need to make to adapt to this increased complexity?",
+                    "response": "Branch",
+                    "result": "Branch!A27",
+                    "feedback": "This question is a bit too broad. Consider your strategy for this call and get more specific. What value can CDW bring to Kevin in the area of big data?",
+                    "graphPoints": 1,
+                    "barPoints": 2
+                }
+            ]
+        }
+    ],
+    "branch": [
+        {
+            "customerText": "I’m kind of busy, but I’ve got a couple of minutes.",
+            "options": [
+                {
+                    "text": "Of course. I understand you're very busy, so thanks for taking my call! How are you doing today?",
+                    "response": "Back to main",
+                    "result": "Main!A9",
+                    "feedback": "Responding directly to Kevin's concern about time demonstrates you're listening to him.",
+                    "graphPoints": 1,
+                    "barPoints": 2
+                },
+                {
+                    "text": "I understand, and I won't take up more than a few minutes. I'd just like to ask you about your strategy for managing customer data.",
+                    "response": "Back to main",
+                    "result": "Main!A21",
+                    "feedback": "Not bad. If you've done your research, you'll know that customer data is likely an important topic for Kevin.",
+                    "graphPoints": 1,
+                    "barPoints": 1
+                },
+                {
+                    "text": "I understand. Krystal gave me a 30,000 foot-view of your business, and now I'm hoping to gain a clearer picture. Can you briefly explain how you primarily work with CDW?",
+                    "response": "Back to main",
+                    "result": "Main!A15",
+                    "feedback": "This option presents a smooth transition to an open-ended question that should reveal more information about BlueSky's business.",
+                    "graphPoints": 2,
+                    "barPoints": 1
+                },
+                {
+                    "text": "I understand. I mainly wanted to get on the phone and check in. Do you have any immediate needs?",
+                    "response": "Next branch round",
+                    "result": "Branch!A9",
+                    "feedback": "This direct question could get you a quick win, but with a new account you may instead hit a dead end in the conversation. Be prepared to pivot to a new topic.",
+                    "graphPoints": 0,
+                    "barPoints": 1
+                }
+            ]
+        },
+        {
+            "customerText": "Nothing I can think of right now, but after Krystal’s email introduction, I was looking forward to speaking with you.",
+            "options": [
+                {
+                    "text": "Great! I've been looking at your account and I think there might be an opportunity for us to help you with your customer data. CDW has deep expertise in this area. How does customer data affect the work you do?",
+                    "response": "Back to main",
+                    "result": "Main!A27",
+                    "feedback": "Good. You've \"warmed up\" the call a bit by asking about Kevin's immediate needs. If you've done your research, you'll know that customer data is likely an important topic for Kevin.",
+                    "graphPoints": 2,
+                    "barPoints": 2
+                },
+                {
+                    "text": "OK, that's good to hear. So Kevin, I've been reviewing Krystal's notes and I'm curious about your plans for customer data. Do you have another few minutes to talk about that?",
+                    "response": "Back to main",
+                    "result": "Main!A21",
+                    "feedback": "Instead of asking if Kevin has more time to talk, ask him an open-ended question about the topic you want to explore.",
+                    "graphPoints": 1,
+                    "barPoints": 1
+                },
+                {
+                    "text": "Perfect. I don't want to take up too much of your time today, but since I'm new to the account, I'd like to set aside time for you and I to review your needs. When would you have 15-20 minutes to catch up next week?",
+                    "response": "Branch",
+                    "result": "Branch!A21",
+                    "feedback": "Careful! While you do want to schedule a follow-up call, you'd do well to learn more about the business now, so that the next call is as productive as possible.",
+                    "graphPoints": 0,
+                    "barPoints": 1
+                },
+                {
+                    "text": "OK, that's good to hear. If we can go big-picture for a minute, I'd like to hear a bit more about your IT strategy for the near future. What is BlueSky looking to accomplish, and how will that affect your work?",
+                    "response": "Next branch",
+                    "result": "Branch!A15",
+                    "feedback": "Try to be more direct with value-based messaging. Explore a specific topic that you believe Kevin will find worth discussing.",
+                    "graphPoints": 0,
+                    "barPoints": 0
+                }
+            ]
+        },
+        {
+            "customerText": "I don't really understand the question... ",
+            "options": [
+                {
+                    "text": "Sorry, let me get more specific. Based on BlueSky's business strategy, how do you anticipate your work with IT will evolve over the next year or so?",
+                    "response": "Sorry, I don't think I have time to get into that big of a topic. Let's catch up another time.",
+                    "result": "Conclusion 3",
+                    "feedback": "This question was still too general. You needed to get more specific so that you can better communicate the value Kevin will realize by working with CDW.",
+                    "graphPoints": 0,
+                    "barPoints": 0
+                },
+                {
+                    "text": "That's OK. I've been looking at your account and I think we might be able to help you make better use of your customer data.",
+                    "response": "Well I'm not sure I'm the right person to talk to about that. You should connect with Marketing.",
+                    "result": "Conclusion 3",
+                    "feedback": "Don't rely on the customer to lead the call to a sale. Take the lead by asking meaningful, open-ended questions.",
+                    "graphPoints": 0,
+                    "barPoints": 0
+                },
+                {
+                    "text": "Sorry, let me get more specific. I'm curious about how BlueSky manages customer data. Do you work with customer data at all?",
+                    "response": "Yes.",
+                    "result": "Main!A21",
+                    "feedback": "Closed questions like this one are not the best way to move a conversation forward. Instead of asking for direct answers, ask for descriptions and explanations.",
+                    "graphPoints": 1,
+                    "barPoints": 1
+                },
+                {
+                    "text": "Sorry, I'll be more specific. Let's talk about customer data. How do you expect customer data to affect your role in the near future?",
+                    "response": "Back to main",
+                    "result": "Main!A27",
+                    "feedback": "Good! This is an open-ended question that prompts Kevin to describe BlueSky's operations in more detail.",
+                    "graphPoints": 2,
+                    "barPoints": 2
+                }
+            ]
+        },
+        {
+            "customerText": "Let's see…Monday afternoon looks good.",
+            "options": [
+                {
+                    "text": "Monday it is. I'm glad we could connect, Kevin!",
+                    "response": "Thanks!",
+                    "result": "Conclusion 3",
+                    "feedback": "Your goal was to set up a follow-up call with Kevin and one of CDW's experts, but the option you chose didn't set that expectation. You never mentioned an expert.",
+                    "graphPoints": 1,
+                    "barPoints": 3
+                },
+                {
+                    "text": "Great. And if it's OK with you, I'm going to invite one of our data experts to the call. Given the complexities of BlueSky's business, I think you could benefit from the insight of a specialist.",
+                    "response": "Great, that works. Talk to you then.",
+                    "result": "Conclusion 2",
+                    "feedback": "Nice! You even explained the benefits of bringing in a CDW expert. You've set yourself up for a good follow-up meeting.",
+                    "graphPoints": 2,
+                    "barPoints": 4
+                },
+                {
+                    "text": "OK, I'll send you an invitation for Monday afternoon. Would you mind if I ask one of our data storage experts to join us on the call? It's always good to have the guidance of a specialist.",
+                    "response": "That's fine.",
+                    "result": "Conclusion 2",
+                    "feedback": "You made your goal of scheduling a follow-up call with Kevin and a CDW expert. However, Kevin would have been more comfortable if you had also explained the value of bringing in the expert.",
+                    "graphPoints": 2,
+                    "barPoints": 3
+                },
+                {
+                    "text": "Monday, then. In the meantime, I'll send you a whitepaper on CDW's experience with data storage. I think you'll find it interesting.",
+                    "response": "Sounds good, thanks.",
+                    "result": "Conclusion 3",
+                    "feedback": "The whitepaper was a good way to provide tangible value during this touch point. However, you needed to schedule a follow-up call with Kevin and one of CDW's experts, and the option you chose didn't set that expectation.",
+                    "graphPoints": 1,
+                    "barPoints": 3
+                }
+            ]
+        },
+        {
+            "customerText": "Not a whole lot. I need to do some more research.",
+            "options": [
+                {
+                    "text": "Well, more data can mean more technical challenges and security concerns. CDW has deep expertise in this area, and we can help minimize your risks. Can we set up some time next week to delve into this? I'll introduce you to one of our data experts.",
+                    "response": "That sounds great. How about something Monday afternoon?",
+                    "result": "Conclusion 1",
+                    "feedback": "Very good! You scheduled a follow-up call with Kevin, and you smoothly set expectations that you'd be bringing a domain expert. Nice work.",
+                    "graphPoints": 1,
+                    "barPoints": 4
+                },
+                {
+                    "text": "The reason I bring it up is because CDW has a lot of experience managing and securing data. How about we set up a call next week so you can talk with one of our experts? In the meantime, I'll send you one of our whitepapers.",
+                    "response": "OK, sounds good. Let's do Monday afternoon.",
+                    "result": "Conclusion 1",
+                    "feedback": "Good. You scheduled a follow-up call with Kevin and a CDW expert. However, you could have used more value-based messaging.",
+                    "graphPoints": 2,
+                    "barPoints": 4
+                },
+                {
+                    "text": "CDW has a lot of experience managing and securing data, and I think we can help you deal with this growing complexity. Could I send you a whitepaper, or connect you with one of our data storage experts?",
+                    "response": "Send me a whitepaper, sure. I'll take a look.",
+                    "result": "Conclusion 3",
+                    "feedback": "You used value-based messaging, but you didn't firmly suggest a follow-up call. Be clearer with your invitation.",
+                    "graphPoints": 1,
+                    "barPoints": 2
+                }
+            ]
+        }
+    ],
+    "conclusion": [
+        {
+            "status": "pass",
+            "heading": "Nice job!",
+            "feedback": "Kevin is looking forward to his follow-up call with you next week. He's already thinking about what questions he'll ask the CDW data expert.",
+            "multiplier": 1.25
+        },
+        {
+            "status": "pass",
+            "heading": "You got the follow-up call!",
+            "feedback": "Kevin is intrigued, but he's not hooked yet. To land a sale, you'll really have to sell the value of CDW on your next call with him.",
+            "multiplier": 1
+        },
+        {
+            "status": "fail",
+            "heading": "You weren't able to schedule a follow-up call with Kevin and the CDW expert.",
+            "feedback": "Fortunately, since you handled the call well otherwise, you'll be able to try again.",
+            "multiplier": null
+        },
+        {
+            "status": "lockout",
+            "heading": "This call didn’t go well.",
+            "feedback": "You’ll need to strategize a new approach before you contact Kevin again. You are in danger of losing this customer.",
+            "multiplier": null
+        }
+    ]
+}
